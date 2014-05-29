@@ -12,6 +12,7 @@ module Pave
       system "pave livereload #{browser} &"
       system "sass --watch ./themes/ --style compressed &"
       system "coffee -wcj ./themes/#{name}/js/app.js ./themes/#{name}/js/"
+      # system "uglifyjs ./themes/#{name}/js/app.js -o ./themes/#{name}/js/app.js"
     end
 
     def initialize(name)
